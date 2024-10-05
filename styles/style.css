@@ -40,11 +40,22 @@ nav ul li a {
     text-decoration: none;
     color: gray;
 }
+/* Style for Intro starts here */
+
+.intro {
+    margin: 1em 2em;
+}
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
 
 /* Style for Registration Section starts here*/
 .registration {
     background-color: #f8f9fa;
-    padding: 50px;
+    padding: 2em;
     text-align: center;
 }
 
@@ -55,15 +66,15 @@ nav ul li a {
 
 .registration label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5em;
     font-size: 1.1rem;
 }
 
 .registration input,
 .registration select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 1em;
+    margin-bottom: 1.5em;
     border: 1px solid #ced4da;
     border-radius: 5px;
 }
@@ -71,7 +82,7 @@ nav ul li a {
 .registration button {
     background-color: #28a745;
     color: white;
-    padding: 10px 20px;
+    padding: 0.5em 1em;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
