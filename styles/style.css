@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', system-ui;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -8,8 +12,19 @@ header {
     /* width: 100%; */
 }
 
+.logo {
+    background: linear-gradient(45deg, #007bff, #28a745);
+    padding: 1em;
+    border-radius: 12px;
+    color: transparent;
+}
+
 .logo a {
     text-decoration: none;
+}
+
+.logo:hover {
+    background: linear-gradient(45deg, #88bcf4, #759a7e);
 }
 
 nav ul {
@@ -24,4 +39,56 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: gray;
+}
+
+/* Style for Registration Section starts here*/
+.registration {
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+}
+
+.registration form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.registration label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.registration input,
+.registration select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.registration button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.registration button:hover {
+    background-color: #218838;
+}
+
+/* footer style starts here */
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 10px;
+    padding: 1em;
+
+    width: 100%;
 }
