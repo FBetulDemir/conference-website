@@ -2,8 +2,8 @@ body {
     font-family: 'Poppins', system-ui;
     background-color: #343a40;
     color: #f8f9fa;
-    background-image: url(https://images.unsplash.com/photo-1485740112426-0c2549fa8c86?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    /* height: 150vh; */
+    background-image: url(../images/background.jpg);
+    height: 150vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -71,47 +71,6 @@ nav ul li a {
     margin-bottom: 1.5em;
 }
 
-/* Style for Registration Section starts here*/
-.registration {
-    background-color: #f8f9fa;
-    padding: 2em;
-    text-align: center;
-}
-
-.registration form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.registration label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-size: 1.1rem;
-}
-
-.registration input,
-.registration select {
-    width: 100%;
-    padding: 1em;
-    margin-bottom: 1.5em;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-}
-
-.registration button {
-    background-color: #28a745;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-.registration button:hover {
-    background-color: #218838;
-}
-
 /* footer style starts here */
 
 footer {
@@ -119,6 +78,8 @@ footer {
     color: #fff;
     font-size: 10px;
     padding: 1em;
-
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* left: 0; */
 }

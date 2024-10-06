@@ -1,0 +1,39 @@
+.registration {
+    background-color: #f8f9fa;
+    padding: 2em;
+    text-align: center;
+}
+
+.registration form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.registration label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+}
+
+.registration input,
+.registration select {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.registration button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.registration button:hover {
+    background-color: #218838;
+}
