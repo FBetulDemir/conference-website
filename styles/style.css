@@ -63,12 +63,55 @@ nav ul li a {
 
 .intro {
     margin: 1em 2em;
+    padding: 1em 2em;
+    /* backdrop-filter: blur(10px); */
+    border-radius: 12px;
+    /* backdrop-filter: invert(90%); */
 }
 .intro-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5em;
+    text-shadow: 2px 2px rgb(202, 241, 8);
+}
+
+.register-btn {
+    background-color: rgb(206, 241, 8);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 8px;
+    color: #101010;
+}
+
+.register-btn:hover {
+    background-color: rgb(233, 155, 107);
+}
+
+.slider-section {
+    width: 100%;
+    backdrop-filter: blur(10px);
+    padding: 2em 0;
+    margin-top: 3em;
+}
+.slider {
+    display: flex;
+    justify-content: space-around;
+    animation: slide 40s linear infinite;
+}
+
+.slider i {
+    font-size: 3em;
+    margin: 0 1em;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* footer style starts here */
