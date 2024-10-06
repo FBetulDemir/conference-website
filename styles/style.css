@@ -8,6 +8,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    backdrop-filter: blur(15px);
 }
 
 header {
@@ -16,33 +17,46 @@ header {
     align-items: center;
     padding: 2em;
     flex: 1;
-
-    /* width: 100%; */
 }
 
-.logo {
-    background: linear-gradient(45deg, #007bff, #28a745);
-    padding: 1em;
+/* Logo style */
+
+.logo.outlined {
+    padding: 0.5em 1em;
+    border: 2px solid #eaff00;
     border-radius: 12px;
-    color: transparent;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
 }
 
-.logo a {
+.logo.outlined a {
     text-decoration: none;
+    color: #f8f9fa;
+    font-family: 'Poppins', system-ui;
+    transition: 1s;
+    text-shadow: 1px 1px rgb(51, 61, 2);
 }
 
-.logo:hover {
-    background: linear-gradient(45deg, #88bcf4, #759a7e);
+.logo.outlined a:hover {
+    color: #101010;
+    text-shadow: none;
+}
+
+.logo.outlined:hover {
+    background-color: #ccff00;
+    border-color: #0056b3;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    gap: 2em;
 }
 
 nav ul li {
     list-style: none;
+    border-radius: 12px;
     border: 2px solid transparent;
 }
 
@@ -50,13 +64,14 @@ nav ul li > *:hover {
     border-color: #ced4da;
     background-color: rgb(209, 219, 228);
     color: rgb(78, 77, 77);
+    cursor: pointer;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #f8f9fa;
     padding: 0.5em 1em;
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 /* Style for Intro starts here */
@@ -73,31 +88,36 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5em;
-    text-shadow: 2px 2px rgb(202, 241, 8);
+    /* text-shadow: 2px 2px rgb(202, 241, 8); */
 }
 
 .register-btn {
-    background-color: rgb(206, 241, 8);
+    background-color: #101010;
+    font-size: 1.1rem;
     padding: 0.5em 1em;
-    border: none;
+    border: 3px solid #f7df1e;
     border-radius: 8px;
-    color: #101010;
+    color: #f8f9fa;
+    transition: 1s;
 }
 
 .register-btn:hover {
-    background-color: rgb(233, 155, 107);
+    background-color: #f7df1e;
+    color: #101010;
 }
 
+/* Slider section styling starts here */
 .slider-section {
     width: 100%;
     backdrop-filter: blur(10px);
     padding: 2em 0;
     margin-top: 3em;
+    overflow: hidden;
 }
 .slider {
     display: flex;
     justify-content: space-around;
-    animation: slide 40s linear infinite;
+    animation: slide 20s linear infinite;
 }
 
 .slider i {
@@ -108,6 +128,12 @@ nav ul li a {
 @keyframes slide {
     0% {
         transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    60% {
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);

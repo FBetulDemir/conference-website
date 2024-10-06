@@ -1,18 +1,33 @@
 .registration {
-    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
     padding: 2em;
     text-align: center;
+    border: 2px solid #eaff00;
+    border-radius: 15px;
+    margin: 2em 7em;
+}
+
+.registration:hover {
+    background-color: black;
+}
+
+.register-title {
+    color: #f1f4f7;
 }
 
 .registration form {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 60%;
 }
 
 .registration label {
     display: block;
     margin-bottom: 0.5em;
     font-size: 1.1rem;
+    color: #f1f4f7;
 }
 
 .registration input,
@@ -25,8 +40,8 @@
 }
 
 .registration button {
-    background-color: #28a745;
-    color: white;
+    background-color: #eaff00;
+    color: #101010;
     padding: 0.5em 1em;
     border: none;
     border-radius: 5px;
@@ -35,5 +50,6 @@
 }
 
 .registration button:hover {
-    background-color: #218838;
+    background-color: #f7df1e;
+    color: #101010;
 }

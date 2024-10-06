@@ -5,25 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../styles/registration.css" />
         <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/normalize.css" />
         <title>Registration Form</title>
     </head>
     <body>
         <header>
-            <div class="logo">
+            <div class="logo outlined">
                 <a href="#"><span>Bättre</span> <span>Webb</span></a>
             </div>
+
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Seminars</a></li>
-                    <li><a href="#">Registration</a></li>
+                    <li><a href="pages/registration.html">Registration</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="registration" id="register">
-                <h2>Register for Bättre Webb</h2>
+                <h2 class="register-title">Register for Bättre Webb</h2>
                 <form>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required />
