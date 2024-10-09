@@ -4,6 +4,7 @@ body {
     color: #f8f9fa;
     background-image: url(../images/background.jpg);
     height: 150vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,6 +18,7 @@ header {
     align-items: center;
     padding: 2em;
     flex: 1;
+    width: 100%;
 }
 
 /* Logo style */
@@ -107,12 +109,25 @@ nav ul li a {
 }
 
 /* Slider section styling starts here */
+.slider-wrapper {
+    position: relative;
+    border: 1px solid transparent;
+}
 .slider-section {
     width: 100%;
     backdrop-filter: blur(10px);
     padding: 2em 0;
     margin-top: 3em;
     overflow: hidden;
+}
+
+.slider-section.ss2 {
+    position: absolute;
+    top: 0px;
+
+    .slider {
+        animation: slide-two 20s linear infinite;
+    }
 }
 .slider {
     display: flex;
@@ -129,14 +144,23 @@ nav ul li a {
     0% {
         transform: translateX(100%);
     }
-    40% {
-        transform: translateX(0);
-    }
-    60% {
-        transform: translateX(0);
-    }
+
     100% {
         transform: translateX(-100%);
+    }
+}
+@keyframes slide-two {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    50.1% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 
@@ -150,5 +174,4 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    /* left: 0; */
 }
