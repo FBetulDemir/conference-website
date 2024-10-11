@@ -21,6 +21,13 @@ header {
     width: 100%;
 }
 
+@media (max-width: 480px) {
+    header {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+}
+
 /* Logo style */
 
 .logo.outlined {
@@ -108,6 +115,13 @@ nav ul li a {
     color: #101010;
 }
 
+@media (max-width: 768px) {
+    .intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
 /* Slider section styling starts here */
 .slider-wrapper {
     position: relative;
@@ -164,6 +178,23 @@ nav ul li a {
     }
 }
 
+/* Seminar days section style starts here */
+
+.seminar-days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0.5em 2em;
+    margin: 0.5em 2em;
+    border: 2px solid #eaff00;
+    .seminar-card {
+        background-color: #101010;
+        color: #f8f9fa;
+        margin: 1em;
+        border: 2px solid #eaff00;
+        box-shadow: 1em 1em 0em -0.1em #4c803c;
+    }
+}
+
 /* footer style starts here */
 
 footer {
@@ -173,5 +204,5 @@ footer {
     padding: 1em;
     width: 100%;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
 }
