@@ -1,0 +1,37 @@
+.seminar-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.seminar-day {
+    background-color: #f3f1d3;
+    border: 2px solid #f7df1e;
+    color: #343a40;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    width: 80%;
+    box-shadow: 0.5em 0.5em 0em -0.1em #525931;
+}
+
+.seminar-day h3 {
+    font-size: 1.5rem;
+    color: #a259ff;
+}
+
+.time,
+.location {
+    font-style: italic;
+    margin: 0.5em 0;
+}
+
+.time i,
+.location i {
+    margin-right: 0.5em;
+}
+
+.location-icon {
+    display: block;
+}

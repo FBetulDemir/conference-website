@@ -37,6 +37,7 @@ header {
     font-weight: bold;
     position: relative;
     transition: color 0.3s;
+    background-color: #101010;
 }
 
 .logo.outlined a {
@@ -141,13 +142,13 @@ nav ul li a {
     position: absolute;
     top: 0px;
     .slider {
-        animation: slide-two 20s linear infinite;
+        animation: slide-two 30s linear infinite;
     }
 }
 .slider {
     display: flex;
     justify-content: space-around;
-    animation: slide 20s linear infinite;
+    animation: slide 30s linear infinite;
 }
 
 .slider i {
