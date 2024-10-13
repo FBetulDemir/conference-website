@@ -140,7 +140,6 @@ nav ul li a {
 .slider-section.ss2 {
     position: absolute;
     top: 0px;
-
     .slider {
         animation: slide-two 20s linear infinite;
     }
