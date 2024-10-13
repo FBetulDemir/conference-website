@@ -2,29 +2,27 @@ body {
     font-family: 'Poppins', system-ui;
     background-color: #343a40;
     color: #f8f9fa;
-    background-image: url(../images/background.jpg);
-    height: 150vh;
+    /* background-image: url(../images/background.jpg);
+    min-height: 150vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px); */
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
-    flex: 1;
-    width: 100%;
 }
 
 @media (max-width: 480px) {
     header {
         display: grid;
         grid-template-rows: 1fr;
+        padding: 2em 0;
     }
 }
 
@@ -32,6 +30,7 @@ header {
 
 .logo.outlined {
     padding: 0.5em 1em;
+    margin-left: 1em;
     border: 2px solid #eaff00;
     border-radius: 12px;
     text-align: center;
@@ -65,8 +64,8 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    border-radius: 12px;
-    border: 2px solid transparent;
+    display: flex;
+    flex: 1;
 }
 
 nav ul li > *:hover {
@@ -85,6 +84,11 @@ nav ul li a {
 
 /* Style for Intro starts here */
 
+.title-border {
+    color: #eaff00;
+    text-shadow: 3px 3px rgb(7, 7, 6);
+}
+
 .intro {
     margin: 1em 2em;
     padding: 1em 2em;
@@ -97,7 +101,6 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5em;
-    /* text-shadow: 2px 2px rgb(202, 241, 8); */
 }
 
 .register-btn {
@@ -129,7 +132,6 @@ nav ul li a {
 }
 .slider-section {
     width: 100%;
-    backdrop-filter: blur(10px);
     padding: 2em 0;
     margin-top: 3em;
     overflow: hidden;
@@ -180,29 +182,79 @@ nav ul li a {
 
 /* Seminar days section style starts here */
 
+.seminar-days-section {
+    h2 {
+        text-align: center;
+        margin-top: 4em;
+    }
+}
 .seminar-days {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0.5em 2em;
-    margin: 0.5em 2em;
-    border: 2px solid #eaff00;
+    gap: 2em;
+    justify-content: center;
+    padding: 3em 2em;
+}
+
+.seminar-card {
+    background-color: #f3f1d3;
+    border: 3px solid #f7df1e;
+    border-radius: 8px;
+    padding: 1.5em;
+    max-width: 250px;
+    box-shadow: 0.5em 0.5em 0em -0.1em #525931;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.seminar-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    color: #a259ff;
+}
+
+.seminar-card h4 {
+    color: #6c757d;
+}
+
+.seminar-card .p-1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #495057;
+}
+
+.seminar-card .p-2 {
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.seminar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(233, 245, 2, 0.2);
+}
+
+@media (max-width: 768px) {
     .seminar-card {
-        background-color: #101010;
-        color: #f8f9fa;
-        margin: 1em;
-        border: 2px solid #eaff00;
-        box-shadow: 1em 1em 0em -0.1em #4c803c;
+        max-width: 100%;
+    }
+    .seminar-days {
+        grid-template-columns: 1fr;
+        place-items: center;
+        /* width: 100%; */
     }
 }
 
 /* footer style starts here */
 
 footer {
-    background-color: #343a40;
+    background-color: #b5c8db;
     color: #fff;
     font-size: 10px;
     padding: 1em;
     width: 100%;
+    height: 100vh;
     position: fixed;
     /* bottom: 0; */
 }
