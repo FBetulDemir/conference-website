@@ -23,7 +23,11 @@ header {
     header {
         display: grid;
         grid-template-rows: 1fr;
-        padding: 2em 0;
+        justify-content: center;
+        padding: 2em 1em;
+    }
+    nav ul li {
+        font-size: 12px;
     }
 }
 
