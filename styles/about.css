@@ -1,0 +1,25 @@
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em 1em;
+    padding: 1em;
+
+    img {
+        max-width: 300px;
+        border-radius: 6px;
+    }
+}
+
+.about-info {
+    padding: 1em;
+}
+
+.about-details,
+.why-attend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
