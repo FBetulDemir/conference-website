@@ -35,3 +35,8 @@
 .location-icon {
     display: block;
 }
+
+footer {
+    width: 100%;
+    margin: 0;
+}
