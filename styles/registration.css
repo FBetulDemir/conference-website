@@ -8,7 +8,8 @@
     text-align: center;
     border: 2px solid #eaff00;
     border-radius: 15px;
-    margin: 2em 7em;
+    margin: 0 7em;
+    margin-bottom: 5em;
 }
 
 .registration:hover {
@@ -52,4 +53,25 @@
 .registration button:hover {
     background-color: #f7df1e;
     color: #101010;
+}
+
+@media (max-width: 768px) {
+    .registration {
+        margin: 0 2%;
+        padding: 1.5em;
+    }
+    /* main {
+        margin-bottom: 50%;
+    } */
+    footer {
+        margin-top: 5em;
+    }
+    .registration form {
+        width: 90%;
+    }
+
+    .registration label,
+    .registration button {
+        font-size: 1rem;
+    }
 }
