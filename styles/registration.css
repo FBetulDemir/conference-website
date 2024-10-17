@@ -31,13 +31,18 @@
     color: #f1f4f7;
 }
 
-.registration input,
+.registration fieldset input,
 .registration select {
-    width: 100%;
+    width: 90%;
     padding: 1em;
     margin-bottom: 1.5em;
     border: 1px solid #ced4da;
     border-radius: 5px;
+}
+
+input:invalid {
+    background-color: rgb(255, 255, 240);
+    outline: 2px solid rgb(255, 0, 0);
 }
 
 .registration button {
@@ -48,6 +53,7 @@
     border-radius: 5px;
     font-size: 1.1rem;
     cursor: pointer;
+    margin-top: 2em;
 }
 
 .registration button:hover {
@@ -69,7 +75,9 @@
     .registration form {
         width: 90%;
     }
-
+    .register-title {
+        font-size: 1.4rem;
+    }
     .registration label,
     .registration button {
         font-size: 1rem;

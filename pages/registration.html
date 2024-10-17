@@ -31,18 +31,30 @@
                     Register for <span class="title-border">Bättre Webb</span>
                 </h2>
                 <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required />
+                    <fieldset>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </fieldset>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            value="name@example.com"
+                            id="email"
+                            name="email"
+                            required
+                        />
+                    </fieldset>
 
-                    <label for="days">Select Days</label>
-                    <select id="days" name="days" required>
-                        <option value="1">1 Day Pass</option>
-                        <option value="2">2 Days Pass</option>
-                        <option value="3">3 Days Pass</option>
-                    </select>
+                    <fieldset>
+                        <label for="days">Select Days</label>
+                        <select id="days" name="days" required>
+                            <option value="1">1 Day Pass</option>
+                            <option value="2">2 Days Pass</option>
+                            <option value="3">3 Days Pass</option>
+                        </select>
+                    </fieldset>
 
                     <button type="submit">Submit</button>
                 </form>
