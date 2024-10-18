@@ -32,7 +32,8 @@
 }
 
 .registration fieldset input,
-.registration select {
+.registration select,
+.registration textarea {
     width: 90%;
     padding: 1em;
     margin-bottom: 1.5em;
@@ -41,7 +42,8 @@
 }
 
 input:invalid,
-option:invalid {
+option:invalid,
+textarea:invalid {
     background-color: rgb(255, 255, 240);
     outline: 2px solid rgb(255, 0, 0);
 }
@@ -66,6 +68,7 @@ option:invalid {
     .registration {
         margin: 0 2%;
         padding: 1.5em;
+        margin-bottom: 5em;
     }
     /* main {
         margin-bottom: 50%;
