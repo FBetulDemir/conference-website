@@ -40,7 +40,8 @@
     border-radius: 5px;
 }
 
-input:invalid {
+input:invalid,
+option:invalid {
     background-color: rgb(255, 255, 240);
     outline: 2px solid rgb(255, 0, 0);
 }

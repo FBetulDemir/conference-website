@@ -40,13 +40,32 @@
                         <label for="email">Email</label>
                         <input
                             type="email"
-                            value="name@example.com"
+                            placeholder="name@example.com"
                             id="email"
                             name="email"
                             required
                         />
                     </fieldset>
-
+                    <fieldset>
+                        <label for="meal">Pre-Select Meal</label>
+                        <select
+                            id="meal"
+                            name="meal"
+                            placeholder="Please select meal"
+                            required
+                        >
+                            <option value="1">Vegetarian menu</option>
+                            <option value="2">Vegan menu</option>
+                            <option value="3">Fish menu</option>
+                            <option value="4">Gluten-Free menu</option>
+                            <option value="5">Dairy-Free menu</option>
+                            <option value="6">Halal menu</option>
+                            <option value="7">Kosher menu</option>
+                            <option value="8">Paleo menu</option>
+                            <option value="9">Keto menu</option>
+                            <option value="10">Low-Carb menu</option>
+                        </select>
+                    </fieldset>
                     <fieldset>
                         <label for="days">Select Days</label>
                         <select id="days" name="days" required>
